@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS presence;	
+CREATE DATABASE IF NOT EXISTS attendances;	
 
-USE presence;
+USE attendances;
 
 CREATE TABLE users (
  fn INT UNIQUE,
@@ -8,7 +8,7 @@ CREATE TABLE users (
  name VARCHAR(255),
  username VARCHAR(255) NOT NULL UNIQUE,
  year INT,
- group INT,
+ group INT, //group e ключова дума
  spec VARCHAR(255),
  pass VARCHAR(255),
  PRIMARY KEY (username)
